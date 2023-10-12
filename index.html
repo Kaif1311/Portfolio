@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Kaif's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/40b76b6ab1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="Head">
+         
+        <div id="container">
+            
+            <nav>
+                <h1><span class="kolar">Portfolio<span></h1>
+                <ul id="sidemenu">
+
+                    <li><a href="#Head">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header">
+
+                <h1>Hey, I'am <br> <span class="mk">Mohammad</span> <span class="kk"> Kaif</span></h1>
+                <p>
+                    Web developer/Software Engineer
+                </p>          
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title"> About Me </h1>
+            <div class="row">
+                <div class="col-1">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nisi. Possimus quas, ipsum
+                        reprehenderit nulla quia culpa obcaecati repudiandae nemo laborum eaque perferendis incidunt
+                        iusto sint officia perspiciatis deleniti! Enim.</p>
+                </div>
+                <div class="col-2">
+                    <div class="tab-titles">
+                        <h2>Skills</h2>
+                        <div class="title-content">
+                            <ul>
+                                <li><span>Frontend developer</span><br>Designing Web Pages</li>
+                                <li><span>Software Engineer</span><br>Solving Real-World Problems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="Projects">
+        <div class="contained">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>PROJECT 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cumque provident modi animi
+                        amet recusandae, debitis porro dolorem nulla maiores error eius quasi! Ullam. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Tenetur, earum modi maiores veniam placeat obcaecati
+                        perferendis soluta sint pariatur animi, nobis similique deleniti cum unde beatae tempore natus
+                        velit consequuntur, minima quaerat possimus. Possimus sapiente, exercitationem cumque veritatis
+                        minima enim?</p>
+                    <a href="#">See more</a>
+                </div>
+                <div>
+                    <h2>PROJECT 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo cumque provident modi animi
+                        amet recusandae, debitis porro dolorem nulla maiores error eius quasi! Ullam. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Labore hic a, maiores soluta magnam molestiae, modi vitae
+                        tenetur enim voluptatem, quasi sint quam sit? Minima sed architecto eligendi quibusdam, fuga
+                        accusamus tenetur voluptate repellendus ratione saepe exercitationem natus neque aut?</p>
+                    <a href="#">See more</a>
+                </div>
+                <div>
+                    <h2>PROJECT 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit voluptas consequatur
+                        molestias! Nisi nobis natus officia, perspiciatis quas optio numquam a possimus ipsa veniam
+                        fugiat nihil in distinctio labore consectetur facere explicabo quaerat accusantium, maxime
+                        pariatur corrupti at vel laboriosam! Optio possimus obcaecati esse doloremque aspernatur ut,
+                        nisi qui nihil, corrupti mollitia aut sequi officiis necessitatibus rem ad inventore sit quidem
+                        accusamus fuga tempore labore ducimus blanditiis? Accusantium illum eligendi natus ea quas esse,
+                        voluptatum nam est aut explicabo.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------Contact---------------->
+<div id="contact">
+    <div class="contained">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subb-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>mohammaddkaif0602@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(+91) 8112351108</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mohammadkaif55?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.linkedin.com/in/mohammadkaif1311/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/__mohammad_kaif/?igshid=NzZlODBkYWE4Ng%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="/Mohammad Kaif CV.pdf" download class="btn ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" >
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Copy Right-->
+<div class="copyright">
+    <p>Copyright © Mohammad Kaif </p>
+</div>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwvHvHv7dfF95oGA5c2fJKLQeSavXXTylQAzDvmTZhD98bUhqPkIyFaYSszNVR4NqLR_g/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+         const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function() {
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
