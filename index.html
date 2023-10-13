@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Kaif's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
     <script src="https://kit.fontawesome.com/40b76b6ab1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,7 +32,7 @@
 
                 <h1>Hey, I'am <br> <span class="mk">Mohammad</span> <span class="kk"> Kaif</span></h1>
                 <p>
-                    Web developer/Software Engineer
+                    <b>And I, am a <span class="multiple-type" ></span></b>
                 </p>          
             </div>
         </div>
@@ -116,9 +117,7 @@
                     <a href="https://www.instagram.com/__mohammad_kaif/?igshid=NzZlODBkYWE4Ng%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                 </div>
-                
-                <a href="./KaifCV.pdf" download="KaifCV.pdf" target="_blank" class="btn" >Download CV</a> 
-
+                <a href="/Mohammad Kaif CV.pdf" download class="btn ">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -166,6 +165,25 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+    
+    
+  <!-- Element to contain animated typing -->
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.multiple-type', {
+      strings: ['Frontend Developer', 'Software Engineer'],
+      typeSpeed: 100,
+      backSpeed: 150,
+      loop: true
+    });
+  </script>
+</body>
 </body>
 
 </html>
